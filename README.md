@@ -6,10 +6,30 @@ Just add [UPPERCASE.JAVA-JSON-UTIL.jar](https://github.com/Hanul/UPPERCASE.JAVA-
 * for normal Java project(not Android project), you need [JSON-java](https://github.com/douglascrockford/JSON-java)
 
 ## API
-* `UTIL.COPY_ARRAY` 
+* `UTIL.EXTEND_ARRAY` extend array.
+```Java
+UTIL.EXTEND_ARRAY(JSONArray originArray, JSONArray extendArray)
+```
+* `UTIL.EXTEND_DATA` extend data.
+```Java
+UTIL.EXTEND_DATA(JSONObject originData, JSONObject extendData)
+```
+* `UTIL.COPY_ARRAY` copy array.
+```Java
+JSONArray copiedArray = UTIL.COPY_ARRAY(JSONArray jsonArrayy)
+```
 * `UTIL.COPY_DATA` copy data.
+```Java
+JSONObject copiedData = UTIL.COPY_DATA(JSONObject json)
+```
 * `UTIL.PACK_DATA` pack data with Date type.
+```Java
+JSONObject packedData = UTIL.PACK_DATA(JSONObject json)
+```
 * `UTIL.UNPACK_DATA` unpack data with Date type.
+```Java
+JSONObject unpackedData = UTIL.EXTEND_ARRAY(JSONObject json)
+```
 
 ## License
 [MIT](LICENSE)
